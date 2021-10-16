@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 
 </head>  
 <body>
@@ -24,7 +25,9 @@
 
 				</a>
 
-			<div class="nav-links">
+			<div class="nav-links" id="navLinks">
+
+				<i class="fa fa-times" onclick="hideMenu()"></i>
 
 				<ul>
 					<li><a href="">HOME</a></li>
@@ -35,9 +38,77 @@
 
 				</ul>
 			</div>
-
+			<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
+
+		<div class="text-box">
+			<h1>Best FTTH Service Provider <br> <p1>At Barabanki</p1></h1>
+			<p>Unparalled Services in market and speed promises are the best.</p>
+			<a href="" class="hero-btn">Visit us to Know more</a>
+		</div>
 	</section>
+
+
+<section class="services">
+	<h1>Services We offer </h1>
+	<p> FTTH and Networking Solution</p>
+
+	<div class="row">
+		<div class="services-col">
+			<h3>FTTH</h3>
+			<p> Best services in Barabanki at very
+			 justified cost along with speed promises.. 
+			avail once the service.</p>
+
+		</div>
+		<div class="services-col">
+			<h3>Networking</h3>
+			<p> Best services in Barabanki at very
+			 justified cost along with speed promises.. 
+			avail once the service.</p>
+
+		</div>
+		<div class="services-col">
+			<h3>Point to Point</h3>
+			<p> Best services in Barabanki at very
+			 justified cost along with speed promises.. 
+			avail once the service.</p>
+
+		</div>
+	</div>
+</section>
+	<!--- JavaScript for Toggle menu----->
+
+	<script type="text/javascript">
+		
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+		function hideMenu() {
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
 	
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
