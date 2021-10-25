@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>OneFabb- FTTH</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="../CSScode/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>  
+<body>
+
+	<section class="sub-header">
+		<nav>
+			<a href="index.html">
+				<img src="../Images/icononefabb.png"> 
+				<p1>ONEFABB<p1> 
+
+				</a>
+
+			<div class="nav-links" id="navLinks">
+
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES<a></li>
+					<li><a href="index.html">NEWS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<h1>Contact Us</h1>
+	</section>
+
+
+	<!-----Contact Us Content---->
+
+	<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d944.1824154811692!2d81.1978810790642!3d26.927068581260425!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3ad64b752775092!2sOnefabb%20Fiber%20Broadband!5e0!3m2!1sen!2sin!4v1634962148230!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+
+	<section class="contact-us">
+	
+	<div class="row">
+		<div class="contact-col">
+			<div>
+			<i class="fa fa-home"></i>
+				<span>
+					<h5> Bramharaj Tower, NAKA Satrikh</h5>
+					<p>Barabanki</p>
+				</span>
+			</div>
+
+			<div>
+			<i class="fa fa-phone"></i>
+				<span>
+					<h5> +91- 8299154558</h5>
+					<p>Monday to Sunday 24X7</p>
+				</span>
+			</div>
+
+			<div>
+			<i class="fa fa-envelope-o"></i>
+				<span>
+					<h5> onefabb@outlook.com</h5>
+					<p>Mail us your query</p>
+				</span>
+			</div>
+		</div>
+		<div class="contact-col">
+
+			<form action="filehandler.php">  
+				<input type="text" name="name" placeholder="Enter Your Name" required>
+				<input type="email" name = "email" placeholder="Enter Your mail address" required>
+				<input type="text" name="subject" placeholder="Enter Your Subject" required>
+				<textarea rows="8" name="message" placeholder="Message" required> </textarea> 
+				<button type="submit" class="hero-btn red-btn"> send Message</button>
+
+
+			</form>
+			
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+<!---Footer------->
+<section class="footer">
+	<h4> ABOUT US</h4>
+	<p> Click here to know more
+	</p>
+	<div class="icons">
+		
+
+		<a href="https://www.facebook.com/profile.php?id=100074289060448"><i class="fa fa-facebook"></i></a>
+		<a href="https://twitter.com/onefabb_bbk"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+		<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+		
+	</div>
+	<p>Made with <i class="fa fa-heart-o"> Nitesh Kumar Verma</i></p>
+
+</section>
+
+
+	<!--- JavaScript for Toggle menu----->
+
+	<script type="text/javascript">
+		
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+		function hideMenu() {
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
