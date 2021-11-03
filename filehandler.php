@@ -1,17 +1,20 @@
 <?php
 
+//get data from form  
 
-ini_set( 'display_errors', 1 );
-error_reporting( E_ALL );
-$from = "test@hostinger-tutorials.com";
+$name = $_POST['name'];
+$email= $_POST['email'];
+$message= $_POST['message'];
 $to = "nitesh.verma0999@gmail.com";
-$subject = "Checking PHP mail";
-$message = "PHP mail works just fine";
-$headers = "From:" . $from;
-if(mail($to,$subject,$message, $headers)) {
-echo "The email message was sent.";
-} else {
-echo "The email message was not sent.";
+$subject = "Mail From website";
+$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
+$headers = "From: onefabb@outlook.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
 }
+//redirect
+header("Location:services.html");
+
 
 ?>
