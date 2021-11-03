@@ -1,29 +1,17 @@
 <?php
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
 
 
-$email_from = 'nitesh.verma0999@gmail.com';
-
-$email_subject = 'New Form Submission';
-
-$email_body = "User Name: $name. \n".
-				"User Email: $visitor_emial. \n".
-				"subject: $subject. \n".
-				"User Message: $message. \n";
-
-$to = 'onefabb@outlook.com';
-
-$headers = "From: $email_from \r\n";
-
-$headers .= "Reply-To: $visitor_email \r\n";
-
-mail($to, $email_subject, $email_body, $headers);
-
-header("Location: contact.html")
-
-
+ini_set( 'display_errors', 1 );
+error_reporting( E_ALL );
+$from = "test@hostinger-tutorials.com";
+$to = "nitesh.verma0999@gmail.com";
+$subject = "Checking PHP mail";
+$message = "PHP mail works just fine";
+$headers = "From:" . $from;
+if(mail($to,$subject,$message, $headers)) {
+echo "The email message was sent.";
+} else {
+echo "The email message was not sent.";
+}
 
 ?>
