@@ -9,7 +9,7 @@ $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
 $headers = "From: nitesh.gkv@gmail.com" . "\r\n" .
 "CC: nitesh_verma@s3india.com";
-if($email!=NULL){
+if($email=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
